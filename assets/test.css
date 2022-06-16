@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#main {
+    /* position: relative; */
+}
+
+/* header */
+
+#header {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#header img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-top: -92px;
+}
+
+#header > ul {
+    margin-left: 120px;
+    position: relative;
+}
+
+#header ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+#header ul li a {
+    color: #fff;
+    display: block;
+    line-height: 80px;
+    text-decoration: none;
+    padding: 0 40px;
+}
+
+#header li:hover a {
+    background-color: #fff;
+    color: #000;
+}
+
+/* slider */
+
+#slider {
+    /* position: relative; */
+}
+
+#slider a img {
+    display: block;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.btn1, .btn2 {
+    padding: 10px 18px;
+    font-size: 20px;
+    background-color: rgb(87, 212, 221);
+    color: #000;
+    position: absolute;
+    margin-top: -310px;
+    border-radius: 50%;
+    border: none;
+}
+
+.btn1 {
+    left: 20px;
+}
+
+.btn2 {
+    right: 20px;
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+#thong_tin {
+    background-color: #ccc;
+    height: 140px;
+    margin-top: 30px;
+}
+
+#thong_tin > div {
+    width: 27%;
+    float: left;
+    margin-top: 30px;
+    margin-left: 6.333333%;
+}
+
+.ship, .time, .reload {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#thong_tin div > i {
+    /* margin-left: 50%; */
+    margin-left: 120px;
+    font-size: 40px;
+    padding: 10px;
+    background-color: #000;
+    color: yellow;
+    border-radius: 50%;
+}
+
+#sp_hot h1 {
+    color: red;
+    font-style: italic;
+}
+
+/* Sinh nhật */
+#sinh_nhat {
+    /* height: 1200px; */
+    background-color: #ccc;
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+#sinh_nhat > .right {
+    float: right;
+}
+
+#sinh_nhat h1 {
+    color: red;
+    font-style: italic;
+    font-size: 50px;
+    padding-top: 20px;
+    /* padding: 30px 0; */
+}
+
+.content .image img {
+    width: 350px;
+    height: 350px;
+    float: left;
+    margin-left: 20px;
+    /* margin-top: 50px; */
+}
+
+#sinh_nhat .sale_ship {
+    color: rgb(13, 121, 22);
+    font-size: 40px;
+}
+
+#sinh_nhat .sale20 {
+    font-size: 30px;
+
+}
+
+#sinh_nhat .sale20pt {
+    color: rgb(13, 121, 22);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#sinh_nhat .thoi_han {
+    /* width: 50%; */
+    font-size: 28.5px;
+    font-style: italic;
+    color: rgb(137 12 12);
+}
+
+#sinh_nhat .name {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(67 25 179);
+}
+
+@-webkit-keyframes my {
+    0% { color: #F8CD0A;} 
+    25% {color: rgb(240, 66, 66);}
+    50% { color: rgb(18, 128, 18);} 
+    75% { color: rgb(84, 28, 214);}
+    100% { color: #da4991;} 
+}
+#sinh_nhat .sale20pt {
+    /* font-size:24px; */
+    font-weight:bold;
+    -webkit-animation: my 700ms infinite;
+    -moz-animation: my 700ms infinite; 
+    -o-animation: my 700ms infinite; 
+    animation: my 700ms infinite;
+}
+
+#sinh_nhat .row .col-md-4 .img_content{
+    /* margin: 0 20px; */
+    width: 300px;
+    background-color: #fff;
+    margin-left: 65px;
+    margin-top: -10px;
+}
+
+#sinh_nhat .row .col-md-4 img {
+    width: 300px;
+    height: 300px;
+}
+
+
+#list_sp .sp_sale {
+    /* margin-left: 100px; */
+    float: left;
+    width: 25%;
+    /* background-color: #ccc; */
+    padding: 10px 0;
+    margin: 30px 55px 0 54px;
+}
+
+.img-name {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+#sinh_nhat  .gia_goc {
+    color: rgba(107, 104, 104, 0.678);
+}
+
+.gia_sale {
+    color: red;
+    font-weight: bold;
+
+}
+
+#list_sp .img_content,  #sp_hot .img_content {
+    /* margin-top: 370px; */
+    font-size: 20px;
+    background-color: #fff;
+    padding-top: 20px;
+    margin-top: -10px;
+}
+
+#list_sp .img_content a, #sp_hot .img_content a {
+    text-decoration: none;
+}
+
+#list_sp .sp_sale img, #sp_hot .sp_sale img {
+    width: 100%;
+    height: 292px;
+    /* text-align: center; */
+    /* margin-top: 10px; */
+}
+
+#list_sp .sp_sale img:hover, #sp_hot .sp_sale img:hover {
+    opacity: 0.8;
+}
+
+/* Sản phẩm hot */
+#sp_hot {
+    /* width: 1000px; */
+    background-color: #ccc;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#sp_hot .sp_sale {
+    /* margin-left: 100px; */
+    float: left;
+    width: 20%;
+    /* background-color: #ccc; */
+    padding: 10px 0;
+    margin: 10px 10px 0 46px;
+
+}
+
+/* footer */
+
+#footer {
+    background-color: #ccc;
+    padding: 20px 0 20px 20px;
+    font-size: 20px;
+}
+
+#footer h1 {
+    text-align: center;
+}
+
+#footer iframe {
+    width: 1310px;
+    height: 500px;
+    /* float: right; */
+    /* justify-content: center; */
+    /* justify-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Giới thiệu */
+#gioi_thieu {
+    /* height: 1000px; */
+    background-color: #ccc;
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+#gioi_thieu .header {
+    color: red;
+    font-size: 40px;
+    background-color: #fff;
+    width: 70%;
+    margin-left: 190px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#gioi_thieu .gt_content {
+    margin: 0 50px;
+}
+
+#gioi_thieu .gt_content img {
+    float: left;
+    width: 25%;
+    margin-right: 20px;
+    height: 210px;
+}
+
+#gioi_thieu .gt_content {
+    /* float: right; */
+    /* width: 75%; */
+    background-color: rgb(115, 219, 115);
+    font-size: 22px;
+    /* margin-top: 10px; */
+}
+
+#gioi_thieu .gt_content .nd {
+    margin-top: 20px;
+}
+
+#gioi_thieu .more {
+    color: red;
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+/* Sản phẩm 1 */
+#list_sp {
+    margin-top: 30px;
+    height: 1050px;
+    text-align: center;
+    background-color: #ccc;
+    padding-top: 10px;
+}
+
+#list_sp h1 {
+    /* margin-top: 10px; */
+}
+
+.page {
+    margin-top: 10px;
+    padding: 10px 16px;
+    color: #fff;
+    background-color: red;
+    border: none;
+    font-size: 20px;
+}
+
+/* infor */
+#inf, #signin {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+#inf h1{
+    /* text-align: center; */
+    margin-bottom: 40px;
+}
+
+#inf input, #signin input, #signup input{
+    width: 70%;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#inf .name1 input{
+    margin-left: 65px;
+}
+
+#inf .name2 input {
+    margin-left: 23px;
+}
+
+#inf .name4 input {
+    margin-left: 43px;
+}
+
+#inf form {
+    /* margin-left: 30px; */
+}
+
+/* Đăng nhập */
+#signin {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#signin .name2 input{
+    margin-left: 84px;
+}
+
+#signin .log {
+    padding: 20px 470px;
+    /* margin-left: 88px; */
+    margin-top: 20px;
+    font-size: 30px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+}
+
+#signin form .signup1 {
+    float: right;
+    margin-right: 100px;
+    /* margin-top: 190px; */
+}
+
+#signin form p{
+    color: red;
+}
+
+#signin form .dn {
+    text-align: center;
+}
+
+#signin form .dn i{
+    font-size: 70px;
+    /* padding: 20px 40px; */
+    margin: 0 26px;
+    color: #000;
+    text-decoration: none;
+}
+
+#signin form .dn a {
+    text-decoration: none;
+}
+
+#signin form .dn i:hover {
+    cursor: pointer;
+}
+
+
+/* Đăng ký */
+#signup {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#signup .name1 input {
+    margin-left: 105px;
+}
+
+#signup .name2 input {
+    margin-left: 57px;
+}
+
+#signup .name3 input {
+    margin-left: 109px;
+}
+
+#signup .name4 input {
+    margin-left: 25px;
+}
+
+#signup .log {
+    font-size: 30px;
+    padding: 20px 120px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 30%;
+}
+
+#signup p {
+    margin-top: 20px;
+}
+
+#signup p a {
+    color: blue;
+}
+
+a .back {
+    float: left;
+    position: fixed;
+    z-index: 1;
+}
